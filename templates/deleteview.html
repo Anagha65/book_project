@@ -1,0 +1,17 @@
+
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+<h1> Delete Book </h1>
+<h3 style="color:blue;">{{ book.title }}</h3><br>
+<form action="" method="post">
+    {% csrf_token %}
+
+    <input type="submit" class="btn btn-warning" value="confirm delete">
+
+</form>
+{% endblock %}
+
+
